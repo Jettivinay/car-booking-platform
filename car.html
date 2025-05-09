@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Car Booking Platform</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Car Booking Platform</h1>
+    <p>Book your dream ride now</p>
+  </header>
+
+  <form id="bookingForm">
+    <input type="text" id="name" placeholder="Your Name" required />
+    <input type="tel" id="phone" placeholder="Phone Number" required />
+    <input type="email" id="email" placeholder="Email" required />
+    <input type="text" id="requirement" placeholder="Enter Car Color (e.g., red or #ff6600)" required />
+    <input type="date" id="date" required />
+    <button type="submit">Book Now</button>
+  </form>
+
+  <div class="car-display" id="carOutput">
+    <div class="car-content">
+      <h2>Booking Details</h2>
+      <p><strong>Name:</strong> <span id="outName"></span></p>
+      <p><strong>Phone:</strong> <span id="outPhone"></span></p>
+      <p><strong>Email:</strong> <span id="outEmail"></span></p>
+      <p><strong>Color:</strong> <span id="outReq"></span></p>
+      <p><strong>Date:</strong> <span id="outDate"></span></p>
+    </div>
+  </div>
+
+  <script src="car.js"></script>
+</body>
+</html>
